@@ -1,0 +1,18 @@
+[package]
+name = "win-sys"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["intrin", "ntoskrnl"]
+intrin = []
+ntoskrnl = []
+netio = []
+
+[dependencies]
+cty = "0.2.2"
+
+[build-dependencies]
+bindgen = "0.65.1"
+cc = "1.0.79"
+builder = { path = "../builder" }
